@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import AddTask from "./components/AddTask";
+//import AddTask from "./components/AddTask";
 import Tasks from "./components/Tasks";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
         <h1 className="text-3xl text-slate-100 font-bold text-center">
           Gerenciador de Tarefas
         </h1>
-        <AddTask />
+        {/* <AddTask /> */}
         <Tasks tasks={tasks} />
       </div>
     </div>

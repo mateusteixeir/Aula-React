@@ -8,11 +8,16 @@ function Tasks(props) {
   return (
     <div>
       {tasks ? (
-        <h1>
+        <ul className="space-y-4 p-6 bg-slate-200 rounded-md shadow">
           {tasks.map((task) => (
-            <p key={task.id}>{task.title}</p>
+            <li
+              className="bg-slate-400 text-white p-2 rounded-md"
+              key={task.id}
+            >
+              {task.title}
+            </li>
           ))}
-        </h1>
+        </ul>
       ) : (
         <h1>Nenhuma task disponível</h1>
       )}
